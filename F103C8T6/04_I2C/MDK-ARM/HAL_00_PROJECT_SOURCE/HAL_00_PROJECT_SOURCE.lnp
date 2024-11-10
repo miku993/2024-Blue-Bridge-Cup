@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"hal_00_project_source\main.o"
+"hal_00_project_source\stm32f1xx_it.o"
+"hal_00_project_source\stm32f1xx_hal_msp.o"
+"hal_00_project_source\stm32f1xx_hal_gpio_ex.o"
+"hal_00_project_source\stm32f1xx_hal_tim.o"
+"hal_00_project_source\stm32f1xx_hal_tim_ex.o"
+"hal_00_project_source\stm32f1xx_hal.o"
+"hal_00_project_source\stm32f1xx_hal_rcc.o"
+"hal_00_project_source\stm32f1xx_hal_rcc_ex.o"
+"hal_00_project_source\stm32f1xx_hal_gpio.o"
+"hal_00_project_source\stm32f1xx_hal_dma.o"
+"hal_00_project_source\stm32f1xx_hal_cortex.o"
+"hal_00_project_source\stm32f1xx_hal_pwr.o"
+"hal_00_project_source\stm32f1xx_hal_flash.o"
+"hal_00_project_source\stm32f1xx_hal_flash_ex.o"
+"hal_00_project_source\stm32f1xx_hal_exti.o"
+"hal_00_project_source\stm32f1xx_hal_uart.o"
+"hal_00_project_source\stm32f1xx_hal_usart.o"
+"hal_00_project_source\system_stm32f1xx.o"
+"hal_00_project_source\startup_stm32f10x_md.o"
+"hal_00_project_source\i2c.o"
+"hal_00_project_source\uart.o"
+--strict --scatter "HAL_00_PROJECT_SOURCE\HAL_00_PROJECT_SOURCE.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "./HAL_00_PROJECT_SOURCE/\HAL_00_PROJECT_SOURCE.map" -o HAL_00_PROJECT_SOURCE\HAL_00_PROJECT_SOURCE.axf

@@ -1,0 +1,160 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1951910844@qq.com, 1, LIC=UJWP0-BH1JB-GK2BG-VHWLA-C8LHD-W8FK1
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      CMSIS_AGDI.dll V1.28.3.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\STM32\比赛\2024蓝桥杯嵌入式\真题\2024模拟3\1.Object_Project\MDK-ARM\1.uvprojx
+Project File Date:  04/10/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Rebuild target '1'
+compiling stm32g4xx_ll_adc.c...
+compiling stm32g4xx_it.c...
+compiling stm32g4xx_hal_flash_ramfunc.c...
+compiling stm32g4xx_hal.c...
+compiling stm32g4xx_hal_msp.c...
+compiling stm32g4xx_hal_exti.c...
+compiling stm32g4xx_hal_gpio.c...
+compiling main.c...
+../Src/main.c(119): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			if( (((float)ADC2_Get_Num()/4096*3.3) >=R37_Low) && (((float)ADC2_Get_Num()/4096*3.3) <=R37_High))
+../Src/main.c(119): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			if( (((float)ADC2_Get_Num()/4096*3.3) >=R37_Low) && (((float)ADC2_Get_Num()/4096*3.3) <=R37_High))
+../Src/main.c(142): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			if( (((float)ADC1_Get_Num()/4096*3.3) >=R38_Low) && (((float)ADC1_Get_Num()/4096*3.3) <=R38_High))
+../Src/main.c(142): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			if( (((float)ADC1_Get_Num()/4096*3.3) >=R38_Low) && (((float)ADC1_Get_Num()/4096*3.3) <=R38_High))
+../Src/main.c(153): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				R37_High +=0.2;
+../Src/main.c(154): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				if(R37_High >=3.2)
+../Src/main.c(161): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				R37_Low +=0.2;
+../Src/main.c(162): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				if(R37_Low >=2.2)
+../Src/main.c(170): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				R38_High +=0.2;
+../Src/main.c(171): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				if(R38_High >=3.2)
+../Src/main.c(178): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				R38_Low +=0.2;
+../Src/main.c(179): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				if(R38_Low >=2.2)
+../Src/main.c(194): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				R37_High -=0.2;
+../Src/main.c(195): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				if(R37_High <=2.0)
+../Src/main.c(202): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				R37_Low -=0.2;
+../Src/main.c(203): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				if(R37_Low <=1.0)
+../Src/main.c(210): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				R38_High -=0.2;
+../Src/main.c(211): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				if(R38_High <=2.0)
+../Src/main.c(218): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				R38_Low -=0.2;
+../Src/main.c(219): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				if(R38_Low <=1.0)
+../Src/main.c(256): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf((char *)txbuffer, "R37:%d,%d,0.0%%\r\n", R37_Check_Num, R37_Pass_Num);
+../Src/main.c(257): warning:  #223-D: function "strlen" declared implicitly
+  			HAL_UART_Transmit(&huart1, txbuffer, strlen(txbuffer), 70);
+../Src/main.c(261): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf((char *)txbuffer, "R37:%d,%d,%.1f%%\r\n", R37_Check_Num, R37_Pass_Num, R37_PAAS_OUT);
+../Src/main.c(262): warning:  #223-D: function "strlen" declared implicitly
+  			HAL_UART_Transmit(&huart1, txbuffer, strlen(txbuffer), 70);
+../Src/main.c(274): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf((char *)txbuffer, "R38:%d,%d,0.0%%\r\n", R38_Check_Num, R38_Pass_Num);
+../Src/main.c(275): warning:  #223-D: function "strlen" declared implicitly
+  			HAL_UART_Transmit(&huart1, txbuffer, strlen(txbuffer), 70);
+../Src/main.c(279): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf((char *)txbuffer, "R38:%d,%d,%.1f%%\r\n", R38_Check_Num, R38_Pass_Num, R38_PAAS_OUT);
+../Src/main.c(280): warning:  #223-D: function "strlen" declared implicitly
+  			HAL_UART_Transmit(&huart1, txbuffer, strlen(txbuffer), 70);
+../Src/main.c(296): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf((char *)LCD_Show_Strings, "       GOODS");
+../Src/main.c(299): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		sprintf((char *)LCD_Show_Strings, "     R37:%4.2fV", (float)ADC2_Get_Num()/4096*3.3);
+../Src/main.c(302): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		sprintf((char *)LCD_Show_Strings, "     R38:%4.2fV", (float)ADC1_Get_Num()/4096*3.3);
+../Src/main.c(308): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf((char *)LCD_Show_Strings, "      STANDARD");
+../Src/main.c(320): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf((char *)LCD_Show_Strings, "        PASS");
+../Src/main.c(352): warning:  #940-D: missing return statement at end of non-void function "LED_Timer_1" 
+  }
+../Src/main.c(359): warning:  #940-D: missing return statement at end of non-void function "LED_Timer_2" 
+  }
+../Src/main.c: 35 warnings, 0 errors
+compiling stm32g4xx_hal_flash.c...
+compiling stm32g4xx_hal_flash_ex.c...
+compiling stm32g4xx_hal_rcc.c...
+compiling stm32g4xx_hal_dma.c...
+assembling startup_stm32g431xx.s...
+compiling stm32g4xx_hal_adc_ex.c...
+compiling stm32g4xx_hal_rcc_ex.c...
+compiling stm32g4xx_hal_adc.c...
+compiling stm32g4xx_hal_tim.c...
+compiling stm32g4xx_hal_tim_ex.c...
+compiling system_stm32g4xx.c...
+compiling stm32g4xx_hal_pwr.c...
+compiling rcc.c...
+compiling stm32g4xx_hal_dma_ex.c...
+compiling adc.c...
+compiling stm32g4xx_hal_uart_ex.c...
+compiling key_led.c...
+compiling uart.c...
+compiling stm32g4xx_hal_cortex.c...
+compiling lcd.c...
+compiling stm32g4xx_hal_pwr_ex.c...
+compiling stm32g4xx_hal_uart.c...
+linking...
+Program Size: Code=22710 RO-data=5306 RW-data=76 ZI-data=2068  
+FromELF: creating hex file...
+"1\1.axf" - 0 Error(s), 35 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.4.0.pack
+                Keil.STM32G4xx_DFP.1.4.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_1
+  D:\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>

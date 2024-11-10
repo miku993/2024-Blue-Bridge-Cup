@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1951910844@qq.com, 1, LIC=UJWP0-BH1JB-GK2BG-VHWLA-C8LHD-W8FK1
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      CMSIS_AGDI.dll V1.28.3.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\STM32\比赛\2024蓝桥杯嵌入式\模板练习\1.Object_Project\MDK-ARM\1.uvprojx
+Project File Date:  04/07/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Build target '1'
+compiling main.c...
+../Src/main.c(136): warning:  #223-D: function "sprintf" declared implicitly
+  	sprintf((char *)txbuff, "Hello World!\r\n");
+../Src/main.c(137): warning:  #223-D: function "strlen" declared implicitly
+  	HAL_UART_Transmit(&huart1, txbuff, strlen(txbuff), 50);
+../Src/main.c(147): warning:  #223-D: function "sprintf" declared implicitly
+  	sprintf((char *)Lcd_Show_Strings, "       Hello       ");
+../Src/main.c(150): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	sprintf((char *)Lcd_Show_Strings, "       ADC:%4.1f       ",(float)ADC1_Get_Num()/4096*3.3);
+../Src/main.c(156): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	sprintf((char *)Lcd_Show_Strings, "     4017:%4.1fK      ",0.7874* (float)MSP4017);
+../Src/main.c(206): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf((char *)txbuff, "Got it!");
+../Src/main.c(207): warning:  #223-D: function "strlen" declared implicitly
+  		HAL_UART_Transmit(&huart1, txbuff, strlen(txbuff), 50);
+../Src/main.c(219): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			Freq =1000000.0/(float)Freq_Count;
+../Src/main.c(247): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf((char *)txbuff, "Yes!");
+../Src/main.c(248): warning:  #223-D: function "strlen" declared implicitly
+  		HAL_UART_Transmit(&huart1, txbuff, strlen(txbuff), 50);
+../Src/main.c: 10 warnings, 0 errors
+linking...
+Program Size: Code=28232 RO-data=5304 RW-data=76 ZI-data=2388  
+FromELF: creating hex file...
+"1\1.axf" - 0 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.4.0.pack
+                Keil.STM32G4xx_DFP.1.4.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_1
+  D:\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
